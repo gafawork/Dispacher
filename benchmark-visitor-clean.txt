@@ -1,0 +1,229 @@
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/tirso/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# JMH version: 1.37
+# VM version: JDK 26.0.1, Java HotSpot(TM) 64-Bit Server VM, 26.0.1+8-34
+# VM invoker: C:\Program Files\Java\jdk-26.0.1\bin\java.exe
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.example.visitor.OperacaoVisitorJmhBenchmark.dispatcherConfirmar
+
+# Run progress: 0,00% complete, ETA 00:00:48
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/tirso/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 1,031 ns/op
+# Warmup Iteration   2: 1,007 ns/op
+# Warmup Iteration   3: 1,004 ns/op
+Iteration   1: 1,015 ns/op
+Iteration   2: 1,004 ns/op
+Iteration   3: 1,007 ns/op
+Iteration   4: 1,008 ns/op
+Iteration   5: 1,174 ns/op
+
+
+Result "com.example.visitor.OperacaoVisitorJmhBenchmark.dispatcherConfirmar":
+  1,042 ±(99.9%) 0,286 ns/op [Average]
+  (min, avg, max) = (1,004, 1,042, 1,174), stdev = 0,074
+  CI (99.9%): [0,756, 1,328] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 26.0.1, Java HotSpot(TM) 64-Bit Server VM, 26.0.1+8-34
+# VM invoker: C:\Program Files\Java\jdk-26.0.1\bin\java.exe
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.example.visitor.OperacaoVisitorJmhBenchmark.dispatcherExecutar
+
+# Run progress: 16,67% complete, ETA 00:00:42
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/tirso/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 1,029 ns/op
+# Warmup Iteration   2: 1,009 ns/op
+# Warmup Iteration   3: 1,013 ns/op
+Iteration   1: 1,007 ns/op
+Iteration   2: 1,005 ns/op
+Iteration   3: 1,005 ns/op
+Iteration   4: 1,003 ns/op
+Iteration   5: 1,006 ns/op
+
+
+Result "com.example.visitor.OperacaoVisitorJmhBenchmark.dispatcherExecutar":
+  1,005 ±(99.9%) 0,007 ns/op [Average]
+  (min, avg, max) = (1,003, 1,005, 1,007), stdev = 0,002
+  CI (99.9%): [0,999, 1,012] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 26.0.1, Java HotSpot(TM) 64-Bit Server VM, 26.0.1+8-34
+# VM invoker: C:\Program Files\Java\jdk-26.0.1\bin\java.exe
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.example.visitor.OperacaoVisitorJmhBenchmark.dispatcherPreExecutar
+
+# Run progress: 33,33% complete, ETA 00:00:34
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/tirso/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 1,011 ns/op
+# Warmup Iteration   2: 1,017 ns/op
+# Warmup Iteration   3: 1,002 ns/op
+Iteration   1: 1,001 ns/op
+Iteration   2: 1,032 ns/op
+Iteration   3: 1,004 ns/op
+Iteration   4: 1,010 ns/op
+Iteration   5: 1,024 ns/op
+
+
+Result "com.example.visitor.OperacaoVisitorJmhBenchmark.dispatcherPreExecutar":
+  1,014 ±(99.9%) 0,051 ns/op [Average]
+  (min, avg, max) = (1,001, 1,014, 1,032), stdev = 0,013
+  CI (99.9%): [0,963, 1,065] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 26.0.1, Java HotSpot(TM) 64-Bit Server VM, 26.0.1+8-34
+# VM invoker: C:\Program Files\Java\jdk-26.0.1\bin\java.exe
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.example.visitor.OperacaoVisitorJmhBenchmark.visitorConfirmar
+
+# Run progress: 50,00% complete, ETA 00:00:25
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/tirso/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 1,125 ns/op
+# Warmup Iteration   2: 1,127 ns/op
+# Warmup Iteration   3: 1,092 ns/op
+Iteration   1: 1,100 ns/op
+Iteration   2: 1,094 ns/op
+Iteration   3: 1,098 ns/op
+Iteration   4: 1,099 ns/op
+Iteration   5: 1,101 ns/op
+
+
+Result "com.example.visitor.OperacaoVisitorJmhBenchmark.visitorConfirmar":
+  1,098 ±(99.9%) 0,011 ns/op [Average]
+  (min, avg, max) = (1,094, 1,098, 1,101), stdev = 0,003
+  CI (99.9%): [1,087, 1,110] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 26.0.1, Java HotSpot(TM) 64-Bit Server VM, 26.0.1+8-34
+# VM invoker: C:\Program Files\Java\jdk-26.0.1\bin\java.exe
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.example.visitor.OperacaoVisitorJmhBenchmark.visitorExecutar
+
+# Run progress: 66,67% complete, ETA 00:00:16
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/tirso/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 1,111 ns/op
+# Warmup Iteration   2: 1,115 ns/op
+# Warmup Iteration   3: 1,104 ns/op
+Iteration   1: 1,107 ns/op
+Iteration   2: 1,106 ns/op
+Iteration   3: 1,104 ns/op
+Iteration   4: 1,119 ns/op
+Iteration   5: 1,117 ns/op
+
+
+Result "com.example.visitor.OperacaoVisitorJmhBenchmark.visitorExecutar":
+  1,111 ±(99.9%) 0,026 ns/op [Average]
+  (min, avg, max) = (1,104, 1,111, 1,119), stdev = 0,007
+  CI (99.9%): [1,084, 1,137] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 26.0.1, Java HotSpot(TM) 64-Bit Server VM, 26.0.1+8-34
+# VM invoker: C:\Program Files\Java\jdk-26.0.1\bin\java.exe
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.example.visitor.OperacaoVisitorJmhBenchmark.visitorPreExecutar
+
+# Run progress: 83,33% complete, ETA 00:00:08
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/tirso/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 1,125 ns/op
+# Warmup Iteration   2: 1,121 ns/op
+# Warmup Iteration   3: 1,109 ns/op
+Iteration   1: 1,123 ns/op
+Iteration   2: 1,203 ns/op
+Iteration   3: 1,118 ns/op
+Iteration   4: 1,136 ns/op
+Iteration   5: 1,134 ns/op
+
+
+Result "com.example.visitor.OperacaoVisitorJmhBenchmark.visitorPreExecutar":
+  1,143 ±(99.9%) 0,133 ns/op [Average]
+  (min, avg, max) = (1,118, 1,143, 1,203), stdev = 0,035
+  CI (99.9%): [1,010, 1,276] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:00:50
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark                                          Mode  Cnt  Score   Error  Units
+OperacaoVisitorJmhBenchmark.dispatcherConfirmar    avgt    5  1,042 ± 0,286  ns/op
+OperacaoVisitorJmhBenchmark.dispatcherExecutar     avgt    5  1,005 ± 0,007  ns/op
+OperacaoVisitorJmhBenchmark.dispatcherPreExecutar  avgt    5  1,014 ± 0,051  ns/op
+OperacaoVisitorJmhBenchmark.visitorConfirmar       avgt    5  1,098 ± 0,011  ns/op
+OperacaoVisitorJmhBenchmark.visitorExecutar        avgt    5  1,111 ± 0,026  ns/op
+OperacaoVisitorJmhBenchmark.visitorPreExecutar     avgt    5  1,143 ± 0,133  ns/op

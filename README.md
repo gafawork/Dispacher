@@ -47,20 +47,9 @@ $cp = "target\classes;target\test-classes;" + $cpLine
 java -cp "$cp" org.openjdk.jmh.Main com.example.dispacher.OperacaoDispatcherJmhBenchmark -wi 3 -i 5 -f 1 -bm avgt -tu ns
 ```
 
-## Resultado atual do benchmark
+## Documentação de benchmark
 
-| Benchmark | Média |
-| --- | --- |
-| `lambdaExecutar` | 3,361 ns/op |
-| `manualExecutar` | 1,013 ns/op |
-| `lambdaPreExecutar` | 3,422 ns/op |
-| `manualPreExecutar` | 1,010 ns/op |
-| `lambdaConfirmar` | 3,355 ns/op |
-| `manualConfirmar` | 1,005 ns/op |
-
-### Interpretação
-
-A implementação manual foi mais eficiente em todos os cenários comparados, com redução de aproximadamente 70% no tempo por operação.
+- [Comparação JMH atual: Dispatcher vs Lambda vs Visitor](docs/benchmark-comparacao-jmh.md)
 
 ## Observações
 

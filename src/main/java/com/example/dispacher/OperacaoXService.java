@@ -9,12 +9,18 @@ public class OperacaoXService implements OperacaoService, Executavel, PreExecuta
     public TipoOperacao getTipo() { return TipoOperacao.OPERACAO_X; }
 
     @Override
-    public void executar(Operacao operacao) { /* ... */ }
+    public void executar(Operacao operacao) {
+        System.out.println("Executar");
+    }
 
     @Override
-    public void preExecutar(Operacao operacao) { /* ... */ }
+    public void preExecutar(Operacao operacao) {
+        System.out.println("Pre Executar");
+    }
 
     @Override
-    public void confirmar(Operacao operacao) { /* ... */ }
+    public void confirmar(Operacao operacao) {
+        System.out.println("Confirmar");
+    }
 }
 

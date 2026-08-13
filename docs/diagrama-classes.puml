@@ -1,0 +1,85 @@
+@startuml diagrama-classes
+skinparam classAttributeIconSize 0
+skinparam linetype ortho
+skinparam nodesep 36
+skinparam ranksep 70
+skinparam packageStyle rectangle
+left to right direction
+
+package "Dispatcher + modelo" {
+    class OperacaoDispatcher {
+        - servicos : Map<TipoOperacao, OperacaoService>
+        + executar(op : Operacao) : void
+        + preExecutar(op : Operacao) : void
+        + confirmar(op : Operacao) : void
+        - aplicar(op, capacidade, acao, nome) : void
+    }
+
+    class Operacao {
+        - tipo : TipoOperacao
+        + getTipo() : TipoOperacao
+    }
+
+    enum TipoOperacao {
+        OPERACAO_X
+        OPERACAO_Y
+        OPERACAO_Z
+    }
+}
+
+package "Implementações" {
+    class OperacaoXService {
+        + getTipo() : TipoOperacao
+        + executar(op : Operacao) : void
+        + preExecutar(op : Operacao) : void
+        + confirmar(op : Operacao) : void
+    }
+
+    class OperacaoYService {
+        + getTipo() : TipoOperacao
+        + confirmar(op : Operacao) : void
+    }
+}
+
+package "Contratos" {
+    interface OperacaoService {
+        + getTipo() : TipoOperacao
+    }
+
+    interface Executavel {
+        + executar(op : Operacao) : void
+    }
+
+    interface PreExecutavel {
+        + preExecutar(op : Operacao) : void
+    }
+
+    interface Confirmavel {
+        + confirmar(op : Operacao) : void
+    }
+}
+
+' -- Guias de posicionamento para reduzir cruzamentos --
+OperacaoDispatcher -[hidden]right- Operacao
+Operacao -[hidden]right- TipoOperacao
+OperacaoDispatcher -[hidden]down- OperacaoXService
+OperacaoXService -[hidden]right- OperacaoYService
+OperacaoYService -[hidden]right- OperacaoService
+OperacaoService -[hidden]down- Executavel
+Executavel -[hidden]down- PreExecutavel
+PreExecutavel -[hidden]down- Confirmavel
+
+' -- Implementações --
+OperacaoXService ..|> OperacaoService
+OperacaoXService ..|> Executavel
+OperacaoXService ..|> PreExecutavel
+OperacaoXService ..|> Confirmavel
+OperacaoYService ..|> OperacaoService
+OperacaoYService ..|> Confirmavel
+
+' -- Associações --
+Operacao --> TipoOperacao : usa
+OperacaoDispatcher o--> OperacaoService : servicos
+OperacaoDispatcher ..> Operacao : parâmetro
+
+@enduml
